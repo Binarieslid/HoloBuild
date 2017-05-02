@@ -80,9 +80,9 @@ document.addEventListener( 'mousedown', onDocumentMouseDown, false );
 var SPEED = 0.01;
 
 function rotateCube() {
-    cube2.rotation.x -= SPEED * 2;
-    cube2.rotation.y -= SPEED;
-    cube2.rotation.z -= SPEED * 3;
+    cube.rotation.x -= SPEED * 2;
+    cube.rotation.y -= SPEED;
+    cube.rotation.z -= SPEED * 3;
 }
 scene.add(camera);
 
@@ -90,7 +90,7 @@ var mouse = false;
 mouse = new THREE.Vector2();
 			function onDocumentMouseDown( event ) {
 				//event.preventDefault();
-        cube2.material.color.set(0xFFFF00);
+        cube.material.color.set(0xFFFF00);
 			}
 
 function initColors (geometry) {
