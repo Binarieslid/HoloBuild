@@ -31,6 +31,7 @@ let raycaster = new THREE.Raycaster();
 let clock = new THREE.Clock();
 let loader = new THREE.TextureLoader();
 let material = new THREE.MeshStandardMaterial({ vertexColors: THREE.VertexColors, map: new THREE.DataTexture(new Uint8Array(3).fill(255), 1, 1, THREE.RGBFormat) });
+let cursor = new THREE.Mesh(initColors(new THREE.RingBufferGeometry(0.001, 0.003, 20, 20)), material.clone());
 
 let ambientLight = new THREE.AmbientLight(0xFFFFFF, 0.8);
 let directionalLight = new THREE.DirectionalLight(0xFFFFFF, 0.5);
